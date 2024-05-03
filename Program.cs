@@ -17,6 +17,7 @@
             int fruitRow = rand.Next(1, rows);
             int fruitCol = rand.Next(1, cols);
             int score = 0;
+            Console.SetWindowSize(80, 25);
 
             // Code in this loop executes infinitely
             // unless Q or CTRL + C is pressed
@@ -24,6 +25,7 @@
             {
                 // Draw score, character, and fruit
                 Console.Clear();
+                Console.CursorVisible = true;
                 Console.SetCursorPosition(0, 0);
                 Console.Write($"Score: {score}");
                 Console.SetCursorPosition(characterCol, characterRow);
